@@ -8,7 +8,6 @@ const jwt = require("jsonwebtoken");
 const asyncHandler = require("express-async-handler");
 
 const register = asyncHandler(async (req,res) =>{
-        console.log("hii");
     const{name,mail,phone,password,type,isdoctor}=req.body;
 
     if(!mail || !name || !phone || !password|| !type || !isdoctor){
