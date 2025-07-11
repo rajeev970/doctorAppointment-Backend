@@ -27,7 +27,7 @@ const doctorSchema = new mongoose.Schema({
     },
     status :{
         type : String,
-        enum : ['pending','approved'],
+        enum : ['pending','approved','reject'],
         default : 'pending'
     },
     fee : {
