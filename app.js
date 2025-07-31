@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
-const {connectDb} = require('../config/connectDb');
+const {connectDb} = require('./config/connectDb');
 connectDb();
 
-var indexRouter = require('../doctorappointment/routes/index');
+var indexRouter = require('./routes/index');
 app.use(express.json());
 app.use('/auth', indexRouter);
 const port = process.env.PORT || 5002;
