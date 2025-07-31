@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
-const {connectDb} = require('../doctorappointment/config/connectDb');
+const {connectDb} = require('../config/connectDb');
 connectDb();
 
 var indexRouter = require('../doctorappointment/routes/index');
